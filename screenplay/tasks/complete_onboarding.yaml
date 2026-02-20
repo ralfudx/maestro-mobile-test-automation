@@ -1,0 +1,17 @@
+---
+- runFlow: ../../selectors/onboarding.yaml
+
+- runFlow:
+    file: ../interactions/tap.yaml
+    env:
+      target: ${next}
+
+- runFlow:
+    file: ../interactions/tap.yaml
+    env:
+      target: ${next}
+
+- runFlow:
+    file: ../interactions/tap.yaml
+    env:
+      target: ${getStarted}

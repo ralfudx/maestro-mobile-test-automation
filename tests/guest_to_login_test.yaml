@@ -1,0 +1,13 @@
+---
+- runFlow: ../test-data/users.yaml
+
+# Actor enters system
+- runFlow: ../screenplay/actors/commuter_actor.yaml
+
+# Actor performs tasks
+- runFlow: ../screenplay/tasks/complete_onboarding.yaml
+- runFlow: ../screenplay/tasks/grant_permissions.yaml
+- runFlow: ../screenplay/tasks/login_with_credentials.yaml
+
+# Actor verifies outcome
+- runFlow: ../screenplay/questions/should_see_home.yaml

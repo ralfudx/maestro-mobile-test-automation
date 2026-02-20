@@ -1,0 +1,4 @@
+appId: com.shuttlers.app
+---
+- launchApp
+- waitForAnimationToEnd
